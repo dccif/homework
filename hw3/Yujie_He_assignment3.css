@@ -1,0 +1,64 @@
+#students {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid;
+  margin: 1px;
+}
+
+#students td,
+#students th {
+  border: 1px solid;
+  text-align: center;
+}
+
+#students tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#searchBar {
+  margin: 1em auto;
+  width: 575px;
+  border-radius: 30px;
+  border: 1px solid #dcdcdc;
+}
+#searchBar:hover {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+#searchBar:focus-within {
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline: none;
+}
+
+.searchinput {
+  margin-left: 1em;
+  height: 45px;
+  border: none;
+  width: 480px;
+  font-size: 16px;
+  outline: none;
+}
+.voice {
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+#searchicon {
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+path {
+  fill: #9ea2a3;
+}
+
+ol {
+  list-style: decimal;
+  list-style-type: decimal;
+}
+
+#flex {
+  display: flex;
+}
