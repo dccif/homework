@@ -15,14 +15,14 @@ const itemsObject = [
 ];
 
 function question1_doubleAll(arr) {
-  let outArr = arr.map((obj) => {
-    return { ...obj };
-  });
-  outArr.map((obj) => {
-    obj.quantity *= 2;
-    obj.price *= 2;
-  });
-  return outArr;
+  // let outArr = arr.map((obj) => {
+  //   return { ...obj };
+  // });
+  return arr.map(({ quantity, price }) => ({
+    quantity: quantity * 2,
+    price: price * 2,
+  }));
+  // return outArr;
 }
 
 function question1_filter(arr) {
@@ -100,7 +100,8 @@ const expectedReturnArray = [
 
 function question3_merge(obj1, obj2) {
   let map = {};
-  let arr = [obj1, obj2].reduce((acc, curr) => [...acc, ...curr], []);
+  // let arr = [obj1, obj2].reduce((acc, curr) => [...acc, ...curr], []);
+  let arr = [...obj1, ...obj2];
 
   arr.forEach((ele) => {
     map[ele.uuid] = {
